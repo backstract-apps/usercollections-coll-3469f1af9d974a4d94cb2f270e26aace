@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: usercollections-coll-3469f1af9d974a4d94cb2f270e26aace-srv
+spec:
+  selector:
+    app: usercollections-coll-3469f1af9d974a4d94cb2f270e26aace
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 9058
+  type: ClusterIP
